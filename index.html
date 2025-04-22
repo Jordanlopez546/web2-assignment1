@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="./src/css/styles.css">
 </head>
 <body>
-  <h1>User Profiles</h1>
+  <header>
+    <h1>User Profiles</h1>
+  </header>
 
   <div id="errorContainer" class="error-container">
     <p id="errorMessage"></p>
@@ -22,14 +24,14 @@
     <span class="loading-text">Loading users...</span>
   </div>
 
-  <div class="container">
-    <div id="userList"></div>
-    <div id="userDetails"></div>
-  </div>
+  <main class="container">
+    <section id="userList" aria-label="User list"></section>
+    <section id="userDetails" aria-label="User details"></section>
+  </main>
 
-  <br>
-  <br>
-  <p style="text-align: center;">&copy; Jordan Lopez</p>
+  <footer>
+    <p>&copy; Jordan Lopez</p>
+  </footer>
 
   <script src="./src/js/app.js"></script>
 </body>
