@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile Viewer</title>
+  <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+  <h1>User Profiles</h1>
+
+  <div id="errorContainer" class="error-container">
+    <p id="errorMessage"></p>
+    <button id="refreshButton" class="refresh-btn">Refresh</button>
+  </div>
+
+  <div id="loadingIndicator" class="loading-container">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+    <span class="loading-text">Loading users...</span>
+  </div>
+
+  <div class="container">
+    <div id="userList"></div>
+    <div id="userDetails"></div>
+  </div>
+
+  <br>
+  <br>
+  <p style="text-align: center;">&copy; Jordan Lopez</p>
+
+  <script src="./src/js/app.js"></script>
+</body>
+</html>
